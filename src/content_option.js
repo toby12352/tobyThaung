@@ -1,7 +1,8 @@
 const logotext = "TAT";
 const meta = {
-    title: "Tun Aung(Toby) Thaung",
-    description: "Hello, I’m Toby, a software devloper, currently working for a research project in Oregon State University",
+  title: "Tun Aung(Toby) Thaung",
+  description:
+    "Hello, I’m Toby, a software devloper, currently working for a research project in Oregon State University",
 };
 
 const introdata = {
@@ -46,58 +47,58 @@ const worktimeline = [
 ];
 
 const skills = [
-    {
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "JavaScript",
-        value: 88,
-    },
-    {
-        name: "HTML",
-        value: 80,
-    },
-    {
-        name: "CSS",
-        value: 80   ,
-    },
-    {
-        name: "C++",
-        value: 75,
-    },
-    {
-        name: "MySQL",
-        value: 70,
-    },
-    {
-        name: "MongoDB",
-        value: 70,
-    }
+  {
+    name: "Python",
+    value: 90,
+  },
+  {
+    name: "JavaScript",
+    value: 88,
+  },
+  {
+    name: "HTML",
+    value: 80,
+  },
+  {
+    name: "CSS",
+    value: 80,
+  },
+  {
+    name: "C++",
+    value: 75,
+  },
+  {
+    name: "MySQL",
+    value: 70,
+  },
+  {
+    name: "MongoDB",
+    value: 70,
+  },
 ];
 
 const tools = [
-    {
-        title: "Amazon Web Services (EC2, RDS, Route 53)"
-    },
-    {
-        title: "Node.js"
-    },
-    {
-        title: "React.js"
-    },
-    {
-        title: "TailWind CSS"
-    },
-    {
-        title: "Google Cloud"
-    },
-    {
-        title: "OpenAI API (GPT-3.5-Turbo, GPT-4, GPT-4-Vision)"
-    },
-    {
-        title: "Docker"
-    }
+  {
+    title: "Amazon Web Services (EC2, RDS, Route 53)",
+  },
+  {
+    title: "Node.js",
+  },
+  {
+    title: "React.js",
+  },
+  {
+    title: "TailWind CSS",
+  },
+  {
+    title: "Google Cloud",
+  },
+  {
+    title: "OpenAI API (GPT-3.5-Turbo, GPT-4, GPT-4-Vision)",
+  },
+  {
+    title: "Docker",
+  },
 ];
 
 const dataportfolio = [
@@ -144,29 +145,29 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "tobythaung@gmail.com",
-    YOUR_FONE: "(541)908-2749",
-    description: "Contact me via email or phone number!",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_ox69sum",
-    YOUR_TEMPLATE_ID: "template_xa6sgr1",
-    YOUR_PUBLIC_KEY: "QLf8DwQXA5_NmsPZL",
+  YOUR_EMAIL: "tobythaung@gmail.com",
+  YOUR_FONE: "(541)908-2749",
+  description: "Contact me via email or phone number!",
+  // creat an emailjs.com account
+  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+  YOUR_SERVICE_ID: "service_ox69sum",
+  YOUR_TEMPLATE_ID: "template_xa6sgr1",
+  YOUR_PUBLIC_KEY: "QLf8DwQXA5_NmsPZL",
 };
 
 const socialprofils = {
-    github: "https://github.com/toby12352",
-    linkedin: "https://linkedin.com/in/tobythaung"
+  github: "https://github.com/toby12352",
+  linkedin: "https://linkedin.com/in/tobythaung",
 };
 export {
-    meta,
-    dataabout,
-    dataportfolio,
-    worktimeline,
-    skills,
-    tools,
-    introdata,
-    contactConfig,
-    socialprofils,
-    logotext,
+  meta,
+  dataabout,
+  dataportfolio,
+  worktimeline,
+  skills,
+  tools,
+  introdata,
+  contactConfig,
+  socialprofils,
+  logotext,
 };

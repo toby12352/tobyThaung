@@ -5,8 +5,11 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
+import useGoogleAnalytics from "../../hooks/useGoogleAnalytics ";
 
 export const ContactUs = () => {
+  useGoogleAnalytics('G-ZVC52HVG8Q')
+
   const [formData, setFormdata] = useState({
     email: "",
     name: "",

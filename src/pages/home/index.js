@@ -4,8 +4,12 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import useGoogleAnalytics from "../../hooks/useGoogleAnalytics ";
 
 export const Home = () => {
+  
+  useGoogleAnalytics('G-ZVC52HVG8Q')
+  
   return (
     <HelmetProvider>
       <section id="home" className="home">

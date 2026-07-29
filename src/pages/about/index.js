@@ -9,8 +9,10 @@ import {
   skills,
   tools,
 } from "../../content_option";
+import useGoogleAnalytics from "../../hooks/useGoogleAnalytics ";
 
 export const About = () => {
+  useGoogleAnalytics('G-ZVC52HVG8Q')
   return (
     <HelmetProvider>
       <Container className="About-header">

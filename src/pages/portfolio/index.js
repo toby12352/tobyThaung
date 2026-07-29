@@ -3,8 +3,12 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import useGoogleAnalytics from "../../hooks/useGoogleAnalytics ";
 
 export const Portfolio = () => {
+  
+  useGoogleAnalytics('G-ZVC52HVG8Q')
+  
   return (
     <HelmetProvider>
       <Container className="About-header">
