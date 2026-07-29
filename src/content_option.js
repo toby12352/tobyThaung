@@ -10,7 +10,8 @@ const introdata = {
         zero: "Full-Stack Developer",
         first: "Front-End Developer",
         second: "Back-End Developer",
-        third: "Web Designer"
+        third: "Freelancer",
+        // forth: "Web Designer"
     },
     description: "Welcome to my portfolio website! I'm a passionate Full Stack Developer with a love for crafting web experiences that are both beautiful and functional.",
     your_img_url:"https://storage.ko-fi.com/cdn/useruploads/post/0a340988-1a6c-46bf-a17f-96c926d246ae_cloudshoritzonalwm.png",
@@ -18,13 +19,19 @@ const introdata = {
 
 const dataabout = {
     title: "Abit about myself",
-    aboutme: "An experienced recent graduate with a B.S in Computer Science, focus in A.I. After working as an Undergraduate Learning Assistant in college, I'm now a software engineer for a research project at Oregon State University, mainly focusing on the full-stack development of an OpenAI powered virtual-notebook website.",
+    aboutme: "I graduated from Oregon State University in 2023 with a B.S in Computer Science, focus in A.I. After working as an Undergraduate Learning Assistant in college, I became a Lead Developer for a SaaS Startup at Clark Research and a Lead Web Developer for EECS Department at Oregon State University, working two jobs simultaneously. Now, I'm a Freelance developer helping people achieve their goals through building reliable SaaS applications.",
 };
 
-const worktimeline = [{
-        jobtitle: "Research Software Engineer",
+const worktimeline = [
+    {
+        jobtitle: "Lead Web Developer",
         where: "Corvallis, Oregon",
-        date: "August 2023 - Present",
+        date: "August 2024 - July 2026",
+    },
+    {
+        jobtitle: "Faculty Research Assistant",
+        where: "Corvallis, Oregon",
+        date: "August 2023 - June 2026",
     },
     {
         jobtitle: "Software Engineer Intern",
@@ -95,19 +102,14 @@ const tools = [
 
 const dataportfolio = [
     {
-        img:"https://i.pinimg.com/originals/c7/d5/9d/c7d59ddc9346ba8d41f83de6718f7d57.gif",
-        description: "A pixel theme chatroom for my visitors. No need to sign up!",
-        link: "http://52.34.201.95/"
-    },
-    {
         img:"https://media1.giphy.com/media/4XXo8A7CIW1lZGgdhm/giphy.gif?cid=6c09b952f8ibj4v9hsw7z87sql8yqkcaqnoqc8q7ajiziqrk&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s",
-        description: "Redesigning frontend design for V-Notebook (Work In Progress)",
-        link: "https://reliable-fairy-9217d9.netlify.app/"
+        description: "eNotebook StartUp - A virtual notebook powered by multiple AI models",
+        link: "https://enotebook.ai/"
     },
     {
-        img: "https://cdn.dribbble.com/userupload/10411701/file/original-77f4a57d9e45fef6510a4b11c8549e45.gif",
-        description: "Virtual-Notebook website fully powered by OpenAI [Research]",
-        link: "http://54.70.119.142:3000/"
+        img:"https://i.pinimg.com/originals/c7/d5/9d/c7d59ddc9346ba8d41f83de6718f7d57.gif",
+        description: "A pixel theme chatroom using websocket and socket.io",
+        link: "https://github.com/toby12352/Pixel-Chatroom"
     },
     {
         img:"https://art.ngfiles.com/images/2655000/2655047_urutaudevstudios_airplane-animation-pixel-art-game.gif?f1659140280",
@@ -137,7 +139,7 @@ const dataportfolio = [
     {   
         img:"https://i.ibb.co/ygvbhVM/resume-logo3.png",
         description: "Thank you for visiting my website😁! (P.S: The code for all the projects above can be found within my github repo)",
-        link: "https://drive.google.com/file/d/1dWhLaCN1ZMuA22iPuBhY3II7B6c3IzWW/view?usp=sharing"
+        link: "https://drive.google.com/file/d/1-phsOJCYl2_4v1mIdI0vciAji6js31qm/view?usp=sharing"
     }
 ];
 
