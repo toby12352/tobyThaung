@@ -1,11 +1,21 @@
 {
   "files": {
-    "main.css": "/tobyThaung/static/css/main.2b3390ae.css",
-    "main.js": "/tobyThaung/static/js/main.ee1b558d.js",
+    "main.css": "/tobyThaung/static/css/main.477fb3d6.css",
+    "main.js": "/tobyThaung/static/js/main.c3c159a9.js",
+    "static/media/analysis.png": "/tobyThaung/static/media/analysis.547bfd6c0623fe703bf4.png",
+    "static/media/Diagram 1 System Context (top-level architecture).png": "/tobyThaung/static/media/Diagram 1 System Context (top-level architecture).bde6f9043ad4a0e0041d.png",
+    "static/media/Diagram 2 Chat Streaming + Tool Orchestration (core AI tutor flow).png": "/tobyThaung/static/media/Diagram 2 Chat Streaming + Tool Orchestration (core AI tutor flow).c4cc4418cdadf5070e89.png",
+    "static/media/Diagram 3 Voyager Artifact Generation.png": "/tobyThaung/static/media/Diagram 3 Voyager Artifact Generation.95fcd66c293b266204ed.png",
+    "static/media/6b) Editing vs create (smart validation + photo replacement).png": "/tobyThaung/static/media/6b) Editing vs create (smart validation + photo replacement).31e107a19b472e23e261.png",
+    "static/media/3) Big picture diagram (containers + data flow).png": "/tobyThaung/static/media/3) Big picture diagram (containers + data flow).5c4850a465703415c953.png",
+    "static/media/9) Development process stages (from domain  ship safely).png": "/tobyThaung/static/media/9) Development process stages (from domain  ship safely).bf28a652c86116c7f27e.png",
+    "static/media/6) Workflow-to-tables diagram (listing publishing).png": "/tobyThaung/static/media/6) Workflow-to-tables diagram (listing publishing).4bb70f9dccc20e76ef5a.png",
+    "static/media/eNotebook Logo.png": "/tobyThaung/static/media/eNotebook Logo.cbf702619782e6b1b97f.png",
+    "static/media/Reloop Logo.png": "/tobyThaung/static/media/Reloop Logo.6cfec4347c339fa58a92.png",
     "index.html": "/tobyThaung/index.html"
   },
   "entrypoints": [
-    "static/css/main.2b3390ae.css",
-    "static/js/main.ee1b558d.js"
+    "static/css/main.477fb3d6.css",
+    "static/js/main.c3c159a9.js"
   ]
 }
