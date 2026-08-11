@@ -1,3 +1,6 @@
+import reloopThumb from "./assets/reloop/Reloop Logo.png";
+import enbThumb from "./assets/eNb/eNotebook Logo.png";
+
 const logotext = "TAT";
 const meta = {
   title: "Tun Aung(Toby) Thaung",
@@ -24,6 +27,11 @@ const dataabout = {
 };
 
 const worktimeline = [
+  {
+      jobtitle: "Freelance Full Stack/Mobile Developer",
+      where: "Portland, Oregon",
+      date: "June 2026 - Present",
+  },
     {
         jobtitle: "Lead Web Developer",
         where: "Corvallis, Oregon",
@@ -49,31 +57,48 @@ const worktimeline = [
 const skills = [
   {
     name: "Python",
-    value: 90,
+    value: 75,
+    yearsLabel: "3–4 years",
+  },
+  {
+    name: "React/React Native",
+    value: 75,
+    yearsLabel: "3–4 years",
   },
   {
     name: "JavaScript",
-    value: 88,
+    value: 75,
+    yearsLabel: "3 years",
   },
   {
     name: "HTML",
-    value: 80,
+    value: 75,
+    yearsLabel: "3 years",
   },
   {
     name: "CSS",
-    value: 80,
-  },
-  {
-    name: "C++",
     value: 75,
+    yearsLabel: "3 years",
   },
   {
     name: "MySQL",
-    value: 70,
+    value: 60,
+    yearsLabel: "2–3 years",
   },
   {
     name: "MongoDB",
-    value: 70,
+    value: 60,
+    yearsLabel: "2–3 years",
+  },
+  {
+    name: "AWS (EC2, S3)",
+    value: 35,
+    yearsLabel: "1–2 years",
+  },
+  {
+    name: "TypeScript",
+    value: 35,
+    yearsLabel: "1 year",
   },
 ];
 
@@ -101,7 +126,24 @@ const tools = [
   },
 ];
 
-const dataportfolio = [
+const datafeatured = [
+    {
+        img: reloopThumb,
+        description:
+          "ReLoop: marketplace case study (Vientiane launch, Supabase, pickup-first)",
+        link: "/reloop",
+        bg: "#F4F3EE",
+    },
+    {
+        img: enbThumb,
+        description:
+          "eNotebook: real-time AI tutor + structured artifacts (streaming, tools, gating)",
+        link: "/enb",
+        bg: "#F4F3EE",
+    },
+];
+
+const datapersonal = [
     {
         img:"https://media1.giphy.com/media/4XXo8A7CIW1lZGgdhm/giphy.gif?cid=6c09b952f8ibj4v9hsw7z87sql8yqkcaqnoqc8q7ajiziqrk&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s",
         description: "eNotebook StartUp - A virtual notebook powered by multiple AI models",
@@ -124,25 +166,27 @@ const dataportfolio = [
     },
     {
         img:"https://media.istockphoto.com/id/1015350564/vector/pixel-art-vector-weather-application-icons-set.jpg?s=612x612&w=0&k=20&c=OVdCKUnMuuaD9OuFwU0UO3N5pbClY70s42gOvysdD-I=",
-        description: "Code for an android application, designed to deliver daily weather forecasts to users in a day-to-day life.",
+        description: "An android application, designed to deliver daily weather forecasts to users in a day-to-day life.",
         link: "https://github.com/toby12352/OpenWeather",
     },
     {
         img:"https://community.gamedev.tv/uploads/db2322/original/3X/0/a/0a86cbc5e12df24cb8c1ae277c4332a2d2a95ad4.png",
-        description: "Code for a lightweight course management API, designed for education industry's use and powered with enhanced database security and scalability. Similar to Canvas.",
+        description: "A lightweight course management API, designed for education industry's use and powered with enhanced database security and scalability. Similar to Canvas.",
         link: "https://github.com/toby12352/Tarpaulin-Restful-API",
     },
     {
         img:"https://img.freepik.com/premium-vector/take-board-with-pixel-art-style_475147-252.jpg",
-        description: "Code for an android application which provides users with the most recent trending movies and TVseries information like IMDB.",
+        description: "An android application which provides users with the most recent trending movies and TVseries information like IMDB.",
         link: "https://github.com/toby12352/Eivom",
     },
     {   
         img:"https://i.ibb.co/ygvbhVM/resume-logo3.png",
         description: "Thank you for visiting my website😁! (P.S: The code for all the projects above can be found within my github repo)",
         link: "https://drive.google.com/file/d/1-phsOJCYl2_4v1mIdI0vciAji6js31qm/view?usp=sharing"
-    }
+    },
 ];
+
+const dataportfolio = [...datafeatured, ...datapersonal];
 
 const contactConfig = {
   YOUR_EMAIL: "tobythaung@gmail.com",
@@ -163,6 +207,8 @@ export {
   meta,
   dataabout,
   dataportfolio,
+  datafeatured,
+  datapersonal,
   worktimeline,
   skills,
   tools,

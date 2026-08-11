@@ -20,6 +20,18 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  useEffect(() => {
+    const defaultFont = "marcellus";
+    try {
+      const saved = localStorage.getItem("font");
+      const allowed = new Set(["vt323", "raleway", "marcellus"]);
+      const nextFont = allowed.has(saved) ? saved : defaultFont;
+      document.documentElement.setAttribute("data-font", nextFont);
+    } catch (e) {
+      document.documentElement.setAttribute("data-font", defaultFont);
+    }
+  }, []);
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">

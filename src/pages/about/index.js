@@ -65,7 +65,7 @@ export const About = () => {
             {skills.map((data, i) => {
               return (
                 <div key={i}>
-                  <h3 className="progress-title" style={{fontFamily: "'VT323', monospace", fontSize:'1.5rem'}}>{data.name}</h3>
+                  <h3 className="progress-title" style={{fontSize:'1.5rem'}}>{data.name}</h3>
                   <div className="progress">
                     <div
                       className="progress-bar"
@@ -74,7 +74,7 @@ export const About = () => {
                         fontSize: '1.5rem',
                       }}
                     >
-                      <div className="progress-value" style={{fontSize:'1.5rem'}}>{data.value}%</div>
+                      <div className="progress-value">{data.yearsLabel}</div>
                     </div>
                   </div>
                 </div>

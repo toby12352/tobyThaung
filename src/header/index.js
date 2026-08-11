@@ -17,7 +17,7 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between" style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
-          <Link  className="navbar-brand nav_ac" to="/" style={{ backgroundColor: 'rgba(0, 0, 0, 0)', fontFamily: "'VT323', monospace", fontSize:'30px' }}>
+          <Link  className="navbar-brand nav_ac" to="/" style={{ backgroundColor: 'rgba(0, 0, 0, 0)', fontSize:'30px' }}>
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
@@ -35,16 +35,16 @@ const Headermain = () => {
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3 hover-option" style={{fontFamily: "'VT323', monospace"}}>Home</Link>
+                  <Link  onClick={handleToggle} to="/" className="my-3 hover-option">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3" style={{fontFamily: "'VT323', monospace"}}> Portfolio</Link>
+                    <Link  onClick={handleToggle} to="/my-work" className="my-3"> My Work</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3" style={{fontFamily: "'VT323', monospace"}}>About</Link>
+                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3" style={{fontFamily: "'VT323', monospace"}}> Contact</Link>
+                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -52,10 +52,10 @@ const Headermain = () => {
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-            <a target="_blank" href={socialprofils.github} style={{fontFamily: "'VT323', monospace", fontSize:'1.3rem'}}>Github</a>
-            <a target="_blank" href={socialprofils.linkedin} style={{fontFamily: "'VT323', monospace", fontSize:'1.3rem'}}>LinkedIn</a>
+            <a target="_blank" href={socialprofils.github} style={{fontSize:'1.3rem'}}>Github</a>
+            <a target="_blank" href={socialprofils.linkedin} style={{fontSize:'1.3rem'}}>LinkedIn</a>
             </div>
-            <p className="copyright m-0" style={{fontFamily: "'VT323', monospace", fontSize:'1.3rem'}}>copyright __ {logotext}</p>
+            <p className="copyright m-0" style={{fontSize:'1.3rem'}}>copyright __ {logotext}</p>
           </div>
         </div>
       </header>

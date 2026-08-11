@@ -6,6 +6,7 @@
     --text-color-2: #fff;
     --text-color-3: rgb(51, 153, 255);
     --overlay-color: rgb(12 12 12 / 63%);
+    --app-font: 'VT323', monospace;
 }
 
 [data-theme="light"] {
@@ -16,6 +17,18 @@
     --text-color-2: #000;
     --text-color-3: rgb(51, 153, 255);
     --overlay-color: rgb(255 255 255 / 70%);
+}
+
+[data-font="vt323"] {
+    --app-font: 'VT323', monospace;
+}
+
+[data-font="raleway"] {
+    --app-font: 'Raleway', sans-serif;
+}
+
+[data-font="marcellus"] {
+    --app-font: 'Marcellus', serif;
 }
 
 html,
@@ -30,8 +43,7 @@ body {
     overflow-y: visible;
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'VT323', monospace;
+    font-family: var(--app-font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
@@ -49,8 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-    /* font-family: Marcellus; */
-    font-family: 'VT323', monospace;
+    font-family: var(--app-font);
 }
 
 a,
@@ -73,8 +84,7 @@ p {
 }
 
 code {
-    font-family: 'VT323', monospace;
-    /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
+    font-family: var(--app-font);
 }
 
 .cursor__dot div {

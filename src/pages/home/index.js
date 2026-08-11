@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
@@ -9,6 +9,30 @@ import useGoogleAnalytics from "../../hooks/useGoogleAnalytics ";
 export const Home = () => {
   
   useGoogleAnalytics('G-ZVC52HVG8Q')
+
+  const [font, setFont] = useState(() => {
+    const defaultFont = "marcellus";
+    try {
+      return localStorage.getItem("font") || defaultFont;
+    } catch {
+      return defaultFont;
+    }
+  });
+
+  const applyFont = (nextFont) => {
+    const defaultFont = "marcellus";
+    const allowed = new Set(["vt323", "raleway", "marcellus"]);
+    const safeFont = allowed.has(nextFont) ? nextFont : defaultFont;
+    setFont(safeFont);
+    document.documentElement.setAttribute("data-font", safeFont);
+    try {
+      localStorage.setItem("font", safeFont);
+    } catch {
+      // Ignore storage errors (e.g. private browsing).
+    }
+  };
+
+  const handleFontChange = (e) => applyFont(e.target.value);
   
   return (
     <HelmetProvider>
@@ -45,9 +69,9 @@ export const Home = () => {
                 </h1>
                 <p className="mb-1x" style={{fontSize:'1.75rem'}}>{introdata.description}</p>
                 <div className="intro_btn-action pb-5">
-                  <Link to="/portfolio" className="text_2">
+                  <Link to="/my-work" className="text_2">
                     <div id="button_p" className="ac_btn btn" style={{fontSize:'1.5rem'}}>
-                      My Portfolio
+                      My Work
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
@@ -61,6 +85,21 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+
+                  <label className="font-select-wrap" htmlFor="site-font-select">
+                    <span className="font-select-label">Change font:</span>
+                    <select
+                      id="site-font-select"
+                      className="font-select"
+                      value={font}
+                      onChange={handleFontChange}
+                      aria-label="Change font for the website"
+                    >
+                      <option value="marcellus">Marcellus</option>
+                      <option value="raleway">Raleway</option>
+                      <option value="vt323">Pixelated</option>
+                    </select>
+                  </label>
                 </div>
               </div>
             </div>
