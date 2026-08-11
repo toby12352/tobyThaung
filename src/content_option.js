@@ -17,7 +17,8 @@ const introdata = {
         third: "Freelancer",
         // forth: "Web Designer"
     },
-    description: "Welcome to my portfolio website! I'm a passionate Full Stack Developer with a love for crafting web experiences that are both beautiful and functional.",
+    description: "You've made it here! 🥂",
+    description2: "I build web and mobile apps that are clear to use and solid under the hood.",
     your_img_url:"https://storage.ko-fi.com/cdn/useruploads/post/0a340988-1a6c-46bf-a17f-96c926d246ae_cloudshoritzonalwm.png",
 };
 
@@ -137,18 +138,18 @@ const datafeatured = [
     {
         img: enbThumb,
         description:
-          "eNotebook: real-time AI tutor + structured artifacts (streaming, tools, gating)",
+          "eNotebook: AI learning notebook overview (STEM study strategies, tutor, artifacts)",
         link: "/enb",
         bg: "#F4F3EE",
     },
 ];
 
 const datapersonal = [
-    {
-        img:"https://media1.giphy.com/media/4XXo8A7CIW1lZGgdhm/giphy.gif?cid=6c09b952f8ibj4v9hsw7z87sql8yqkcaqnoqc8q7ajiziqrk&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s",
-        description: "eNotebook StartUp - A virtual notebook powered by multiple AI models",
-        link: "https://enotebook.ai/"
-    },
+    // {
+    //     img:"https://media1.giphy.com/media/4XXo8A7CIW1lZGgdhm/giphy.gif?cid=6c09b952f8ibj4v9hsw7z87sql8yqkcaqnoqc8q7ajiziqrk&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s",
+    //     description: "eNotebook StartUp - A virtual notebook powered by multiple AI models",
+    //     link: "https://enotebook.ai/"
+    // },
     {
         img:"https://i.pinimg.com/originals/c7/d5/9d/c7d59ddc9346ba8d41f83de6718f7d57.gif",
         description: "A pixel theme chatroom using websocket and socket.io",

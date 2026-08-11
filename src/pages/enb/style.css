@@ -3,24 +3,6 @@
   color: var(--text-color);
 }
 
-.enb-img {
-  width: 100%;
-  border: 1px solid var(--secondary-color);
-  border-radius: 0;
-  margin: 14px 0;
-}
-
-.enb-img-tight {
-  margin-top: 0;
-}
-
-.enb-list {
-  color: var(--text-color);
-  font-size: 1.5rem;
-  padding-left: 1.5rem;
-  margin-top: 12px;
-}
-
 .sec_sp {
   margin-bottom: calc(0.8rem + 1vw);
 }
@@ -29,8 +11,65 @@
   border-color: var(--text-color) !important;
 }
 
+.page-breadcrumb {
+  font-family: var(--app-font);
+  font-size: 1.15rem;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+
+.page-breadcrumb a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.page-breadcrumb a:hover {
+  border-bottom-color: var(--text-color);
+}
+
+.page-breadcrumb-sep {
+  opacity: 0.6;
+  margin: 0 0.25rem;
+}
+
 .enb-h3 {
   margin-bottom: 10px;
+}
+
+.enb-h4 {
+  font-size: 1.35rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.enb-body {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.enb-list {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.enb-impact-note {
+  color: var(--text-color);
+  font-size: 1.25rem;
+  font-style: italic;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.enb-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
 }
 
 .ac_btn {
@@ -42,7 +81,7 @@
   transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   cursor: pointer;
   border-radius: 0;
-  margin-right: 20px;
+  margin-right: 0;
   display: inline-block;
   text-decoration: none;
 }
@@ -94,6 +133,10 @@
 
 #button_p {
   background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#button_h:hover {
   color: var(--primary-color);
 }
 

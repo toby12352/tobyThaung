@@ -1,25 +1,36 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const handleToggle = () => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
   };
 
+  const logoClassName = "navbar-brand nav_ac";
+  const logoStyle = { backgroundColor: "rgba(0, 0, 0, 0)", fontSize: "30px" };
+
   return (
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between" style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>
-          <Link  className="navbar-brand nav_ac" to="/" style={{ backgroundColor: 'rgba(0, 0, 0, 0)', fontSize:'30px' }}>
-            {logotext}
-          </Link>
+          {isHome ? (
+            <span className={logoClassName} style={logoStyle}>
+              {logotext}
+            </span>
+          ) : (
+            <Link className={logoClassName} to="/" style={logoStyle}>
+              {logotext}
+            </Link>
+          )}
           <div className="d-flex align-items-center">
             <Themetoggle />
             <button className="menu__button  nav_ac" onClick={handleToggle} style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}>

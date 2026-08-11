@@ -39,7 +39,8 @@ body {
 body {
     margin: 0;
     height: 100%;
-    overflow-x: hidden;
+    /* clip avoids creating a scroll container (unlike hidden), so position:sticky works */
+    overflow-x: clip;
     overflow-y: visible;
     background-color: var(--bg-color);
     color: var(--text-color);

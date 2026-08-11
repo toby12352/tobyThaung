@@ -8,6 +8,7 @@ import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
 import AnimatedCursor  from "../hooks/AnimatedCursor";
+import { ExternalLinkGuard } from "../components/external-link-guard";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -48,6 +49,7 @@ export default function App() {
         <Headermain />
         <AppRoutes />
       </ScrollToTop>
+      <ExternalLinkGuard />
     </Router>
   );
 }
