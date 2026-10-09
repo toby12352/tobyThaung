@@ -9,6 +9,7 @@ import { ReLoop } from "../pages/reloop";
 import { ReLoopDeveloperPage } from "../pages/reloop_developer_page";
 import { Enb } from "../pages/enb";
 import { EnbDeveloperPage } from "../pages/enb-developer-page";
+import { Resume } from "../pages/resume";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
@@ -26,6 +27,7 @@ const AnimatedRoutes = withRouter(({ location }) => {
         return 1;
       case "/reloop":
       case "/enb":
+      case "/resume":
         return 2;
       case "/reloop_developer_page":
       case "/enb-developer-page":
@@ -67,6 +69,7 @@ const AnimatedRoutes = withRouter(({ location }) => {
           <Route path="/reloop_developer_page" element={<ReLoopDeveloperPage />} />
           <Route path="/enb" element={<Enb />} />
           <Route path="/enb-developer-page" element={<EnbDeveloperPage />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<Home />} />
         </Routes>
